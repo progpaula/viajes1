@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>tarea</title>
+  <!-- Bootswatch Cosmo Theme -->
+  <link
+   rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="App.css" />
+ </head>
+
+ <body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-dark bg-dark">
+   <a class="navbar-brand" href="#" style="color: rgb(248, 241, 255)">viajes</a>
+   <div>
+    <img
+     src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.tooltyp.com%2Fwp-content%2Fuploads%2F2014%2F10%2F1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg&imgrefurl=https%3A%2F%2Fwww.tooltyp.com%2F8-beneficios-de-usar-imagenes-en-nuestros-sitios-web%2F&tbnid=QyjckPLcTSohTM&vet=12ahUKEwixiuSsua_3AhWmwykDHRzXAccQMygAegUIARDZAQ..i&docid=53-N2MbZIY2M8M&w=1900&h=920&q=imagenes&ved=2ahUKEwixiuSsua_3AhWmwykDHRzXAccQMygAegUIARDZAQ"
+     alt="Logo"
+     class="img"
+    />
+   </div>
+  </nav>
+  <div class="container">
+   <!-- APPLICATION -->
+   <div id="App" class="row pt-5">
+    <!-- FORM -->
+    <div class="col-md-4">
+     <div class="card">
+      <form id="product-form" class="card-body">
+       <h5 style="color: rgba(212, 0, 0, 0.959)">Nombres</h5>
+       <div class="form-group">
+        <input
+         type="text"
+         id="name"
+         placeholder="Nombre del producto"
+         class="form-control"
+        />
+       </div>
+       <h5 style="color: rgb(219, 31, 31)">numero</h5>
+       <div class="form-group">
+        <input
+         type="number"
+         id="price"
+         step="0.01"
+         placeholder="Precio"
+         class="form-control"
+        />
+       </div>
+       <h5 style="color: rgb(199, 39, 39)">año</h5>
+       <div class="form-group">
+        <input
+         type="number"
+         id="year"
+         min="1900"
+         max="2099"
+         step="1"
+         value="2018"
+         class="form-control"
+        />
+       </div>
+       <h5 style="color: rgb(255, 8, 0)">destino</h5>
+       <div class="form-group">
+        <select
+         style="width: 100%"
+         class="form-group"
+         class="form-select"
+         id="categoria"
+         aria-label="Default select example"
+        >
+         <option selected>Brasil</option>
+         <option value="ESPAÑA">España</option>
+         <option value="ECUADOR">ecuador</option>
+         <option value="francia">francia</option>
+        </select>
+       </div>
+
+       <input
+        type="submit"
+        ;
+        style="color: rgb(255, 13, 13)"
+        value="Guardar"
+        class="btn btn-primary btn-block"
+       />
+      </form>
+     </div>
+    </div>
+
+    <!-- PRODUCTS LIST -->
+    <div id="product-list" class="col-md-8"></div>
+   </div>
+  </div>
+
+  <script src="App.js" type="module"></script>
+  </script>
+ </body>
+</html>
